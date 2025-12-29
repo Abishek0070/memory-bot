@@ -1,0 +1,29 @@
+# Core
+python-dotenv
+requests
+
+# Groq LLM
+langchain
+langchain-groq
+
+# Embeddings
+sentence-transformers
+
+# Vector Database
+faiss-cpu
+chromadb
+
+# Document loaders
+pypdf
+unstructured
+
+# Backend API
+fastapi
+uvicorn
+
+# Optional UI (choose one)
+streamlit
+# gradio
+
+# Utilities
+tqdm
