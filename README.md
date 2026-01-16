@@ -46,7 +46,7 @@ MemToken is a privacy-focused architecture for Large Language Models (LLMs) that
 Bash
 
 # Clone the repository
-git clone https://github.com/your-username/memtoken-ai.git
+git clone https://github.com/Abishek0070/memtoken-ai.git
 cd memtoken-ai
 
 # Install dependencies
