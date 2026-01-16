@@ -11,7 +11,6 @@ from dotenv import load_dotenv
 load_dotenv()
 JWT_SECRET = "HI" 
 
-# Use a try-except for the LLM to prevent total crash if API key is missing
 try:
     llm = ChatGroq(
         model="llama-3.1-8b-instant", 
@@ -21,7 +20,7 @@ try:
 except:
     st.error("GROQ_API_KEY not found. Please check your .env file.")
 
-# 2. Cookie Manager must be initialized at the top level
+
 cookie_manager = CookieManager()
 
 # --- THE UI STARTS HERE (Ensures sidebar is always visible) ---
@@ -33,7 +32,7 @@ with st.sidebar:
     status_placeholder = st.empty()
     status_placeholder.info("Searching for Memory Token...")
 
-# 3. Memory Functions
+#  Memory Functions
 def get_token_memory():
     # We add a small delay because CookieManager is slow
     time.sleep(0.2)
