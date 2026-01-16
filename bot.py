@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 # 1. Setup
 load_dotenv()
-JWT_SECRET = "HI" 
+JWT_SECRET = os.getenv("JWT_SECRET", "change-this-to-a-strong-secret-in-production") 
 
 try:
     llm = ChatGroq(
