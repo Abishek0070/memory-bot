@@ -87,7 +87,7 @@ if user_input:
         st.write(response.content)
         st.session_state.chat.append(AIMessage(content=response.content))
 
-    # Save to JWT every time for this test
+    # Save to JWT file position every time for this test
     summary_prompt = "Summarize the chat details discussed so far in 30 words."
     summary_res = llm.invoke(st.session_state.chat + [HumanMessage(content=summary_prompt)])
     save_token_memory(summary_res.content)
